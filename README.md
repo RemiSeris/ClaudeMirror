@@ -1,6 +1,6 @@
-# Claude Mirror
+# Mirror by Make a Dent
 
-A Claude skill with two dials. **Load** makes Claude's replies lighter to read. **Mirror** makes Claude talk the way you talk. Turn on one, both, or neither.
+A plugin for Claude with two dials. **Load** makes Claude's replies lighter to read. **Mirror** makes Claude talk the way you talk. Turn on one, both, or neither.
 
 Works in any language. Version 2.
 
@@ -56,15 +56,22 @@ Examples, not modes: nothing switches by itself.
 - **Spoken-only habits** (correcting yourself mid-sentence, two words for one, a "no" that means yes) help when you speak but cost when you read. Claude only uses them with load off and mirror 2 or more.
 - **The profile is how you talk to Claude**, not how you write texts to friends. Speech doesn't transfer to a text message.
 
-## Install (claude.ai)
+## Install
+
+This repository is a Claude plugin, **Mirror by Make a Dent** (`dent-mirror`), with one skill: `mirror`. It works in chat, Cowork and Claude Code.
 
 You need **code execution** on: Settings > Capabilities > "Code execution and file creation". On Enterprise, an owner has to enable skills first.
 
-1. Download **`mirror.zip`** from this repo (it contains only the `mirror` folder with `SKILL.md`).
-2. In Claude: **Customize > Skills > + > Create skill > Upload a skill**, and pick the ZIP.
-3. In a new conversation, type **`load 2`** for lighter replies right away, or **`start mirror`** to build your profile.
+**From the Claude directory:** search for "Mirror by Make a Dent" in the directory and add it.
 
-Building the ZIP yourself: zip the `mirror` folder, so the archive holds `mirror/SKILL.md`.
+**As a skill upload (claude.ai):**
+
+1. Download **`mirror.zip`** from the [latest release](https://github.com/RemiSeris/claudemirror/releases/latest/download/mirror.zip) (it contains only the `mirror` folder with `SKILL.md`).
+2. In Claude: **Customize > Skills > + > Create skill > Upload a skill**, and pick the ZIP.
+
+Then, in a new conversation, type **`load 2`** for lighter replies right away, or **`start mirror`** to build your profile.
+
+Building the ZIP yourself: zip the `skills/mirror` folder, so the archive holds `mirror/SKILL.md`.
 
 No skills? Open [`no-skill.md`](no-skill.md): blocks to paste into a conversation or your preferences.
 
@@ -124,7 +131,7 @@ A vs B shows what load does. B vs C shows what the mirror adds. Mix the order, t
 - **Being watched changes how you talk.** That's why past chats come first.
 - **Instructions fade** in very long conversations. If replies drift, say the dial again.
 - **Privacy**: your past chats and the interview are processed like any other chat, under your Claude data settings. The profile in your preferences applies to every chat until you remove it.
-- **Close cousin**: Claude's custom styles can already learn from writing samples. Claude Mirror adds the load dial, spoken input, the conversation to draw it out, and the mirror dial.
+- **Close cousin**: Claude's custom styles can already learn from writing samples. Mirror adds the load dial, spoken input, the conversation to draw it out, and the mirror dial.
 
 ## Changes in version 2
 

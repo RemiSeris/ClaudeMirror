@@ -1,4 +1,4 @@
-# Claude Mirror without skills
+# Mirror without skills
 
 ## Lighter replies only (load, no profile)
 

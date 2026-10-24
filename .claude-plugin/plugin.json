@@ -1,0 +1,16 @@
+{
+  "name": "dent-mirror",
+  "displayName": "Mirror by Make a Dent",
+  "version": "2.0.0",
+  "description": "Two dials for how Claude replies. Load makes replies lighter to read, no setup. Mirror makes Claude talk the way you talk, from a short spoken conversation.",
+  "author": {
+    "name": "Rémi Seris (Make a Dent)",
+    "url": "https://github.com/RemiSeris"
+  },
+  "homepage": "https://github.com/RemiSeris/claudemirror",
+  "repository": "https://github.com/RemiSeris/claudemirror",
+  "documentationUrl": "https://github.com/RemiSeris/claudemirror#readme",
+  "supportUrl": "https://github.com/RemiSeris/claudemirror/issues",
+  "license": "MIT",
+  "keywords": ["writing style", "readability", "voice", "personalization", "speech", "dictation"]
+}
