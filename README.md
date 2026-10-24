@@ -2,7 +2,9 @@
 
 A plugin for Claude with two dials. **Load** makes Claude's replies lighter to read. **Mirror** makes Claude talk the way you talk. Turn on one, both, or neither.
 
-Works in any language. Version 2.
+Works in any language. Version 2.1.
+
+**New in 2.1: Mirror integrates [tldr](https://github.com/eric-edouard/tldr), Eric's status-card skill** ([@eric-edouard](https://github.com/eric-edouard)). Mirror works on how Claude talks, tldr on what you find when you come back to a session; the dials now apply inside tldr's cards. See [Works with tldr](#works-with-tldr).
 
 ## The two dials
 
@@ -55,6 +57,23 @@ Examples, not modes: nothing switches by itself.
 - **Your words for things** apply as soon as either dial is on: reusing them spares any reader the work of translating.
 - **Spoken-only habits** (correcting yourself mid-sentence, two words for one, a "no" that means yes) help when you speak but cost when you read. Claude only uses them with load off and mirror 2 or more.
 - **The profile is how you talk to Claude**, not how you write texts to friends. Speech doesn't transfer to a text message.
+
+## Works with tldr
+
+Mirror lightens how Claude talks. [**tldr**](https://github.com/eric-edouard/tldr), by Eric ([@eric-edouard](https://github.com/eric-edouard)), lightens what you come back to: a session status card you read in three seconds (the goal and any drift, what's done, what's next, what's waiting on you). Same aim, the other end of the problem, so the two are made to run side by side.
+
+Mirror 2.1 was built and tested against [tldr at commit `0a9f637`](https://github.com/eric-edouard/tldr/tree/0a9f637) (24 Oct. 2026). Install tldr on its own (it's Eric's skill, not part of this repo):
+
+```bash
+npx skills add eric-edouard/tldr -g
+```
+
+When a card is printed, the dials work inside it:
+
+- **The card keeps its shape.** Sections, markers and order stay as tldr defines them; headings follow your language.
+- **Load sets how much goes in.** Load 3 keeps only what's waiting on you, the goal and the next step. From load 2, one question at most after the card.
+- **Your words for things** apply in every line.
+- **The mirror stays out of the card.** In a blind test on three real sessions, the plain card read faster three times out of three. The mirror still applies to the reply around it.
 
 ## Install
 
@@ -133,6 +152,10 @@ A vs B shows what load does. B vs C shows what the mirror adds. Mix the order, t
 - **Privacy**: your past chats and the interview are processed like any other chat, under your Claude data settings. The profile in your preferences applies to every chat until you remove it.
 - **Close cousin**: Claude's custom styles can already learn from writing samples. Mirror adds the load dial, spoken input, the conversation to draw it out, and the mirror dial.
 
+## Changes in version 2.1
+
+- Works with [tldr](https://github.com/eric-edouard/tldr) status cards: the card keeps its shape, load sets how much goes in and caps questions at one from load 2, your words for things apply, the mirror stays out.
+
 ## Changes in version 2
 
 - Load is now its own dial, separate from the mirror, and works without a profile.
@@ -143,8 +166,8 @@ A vs B shows what load does. B vs C shows what the mirror adds. Mix the order, t
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE). This covers Mirror only: no file or text from tldr is included here, and tldr stays under its author's terms.
 
 ---
 
-Made by Rémi (Make a Dent), with Claude.
+Made by Rémi (Make a Dent), with Claude. Status cards: [tldr](https://github.com/eric-edouard/tldr) by Eric.

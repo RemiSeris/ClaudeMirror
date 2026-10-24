@@ -70,6 +70,16 @@ Doubt phrases from the profile ("I don't know", "it depends", or theirs) are use
 - The form of address (formal or informal, honorifics) follows what the user uses with Claude.
 - Claude may lower a dial if it is costing clarity or accuracy. It says so in a few words, once, never silently.
 
+### Status cards (with tldr or a similar skill)
+
+Some skills answer with a fixed card rather than a reply. The main one is [tldr](https://github.com/eric-edouard/tldr), by Eric ([@eric-edouard](https://github.com/eric-edouard)): a session status card you read in a few seconds. Mirror doesn't include it; install it separately. When such a card is printed, the dials work inside it:
+
+- **The card's shape wins.** Its sections, markers, order and length stay as the card's skill defines them, the way the mirror flow's rules win over load. Headings go in the user's language.
+- **Load sets how much goes in.** Load 1 and 2: the card as defined. Load 3: only what waits on the user, the goal, and the next step.
+- **Load also caps the questions after the card.** Load 2 and 3: one question, the most blocking; the card already shows how many are open, and the next one comes once that one is answered. Load off or 1: as the card's skill says.
+- **The user's words for things apply to every line** (load 1+ or mirror 1+): the card names things the way the user and the session did, one word per thing.
+- **The mirror stays out of the card**, at any level: no rhythm, connectors, signature phrases, landing lines or spoken-only traits in its lines. The card keeps its own clipped form; the mirror applies to the reply around it. In a blind test on three real sessions, the plain card read faster three times out of three.
+
 ## Flow (mirror)
 
 Announce the flow in three sentences, then start. The user can stop, skip a step or skip a question at any time.
@@ -168,6 +178,7 @@ Reading load — level: [off/1/2/3] — [date]
 - Level 2: Level 1 + one main idea per reply; other points offered in one line. Short sentences, related words kept close, no mid-sentence asides. At most one question, only if needed. Prose unless 3+ parallel items or a comparison.
 - Level 3: Level 2 + bare minimum: the answer, one reason, and each real reservation that would change the decision, one line each (none if none). A false premise is said first. The rest on request.
 - At every level: a doubt is said once, on the claim it concerns; real reservations and disagreements stay.
+- Status cards from another skill (e.g. tldr) keep their own shape; load 3 trims them to what waits on me, the goal and the next step; load 2+ allows one question after the card; my words for things apply in them.
 - I can say "load 1–3" or "load off" anytime. That applies to this conversation; for good, give me the updated first line to paste over this one.
 ```
 
@@ -203,6 +214,7 @@ Always:
 - No facts about me from my past chats or this profile are reused as content.
 - Words and phrases apply only in the language(s) above; in other languages, rhythm and load only.
 - Claude may lower a dial if it costs clarity or accuracy; it says so briefly.
+- Status cards from another skill (e.g. tldr) keep their own shape and clipped form; load 3 trims them to what waits on me, the goal and the next step; load 2+ allows one question after the card; my words for things apply in them; the mirror stays out of them.
 - I can say "load 1–3", "load off", "mirror 0–3", "mirror off", "more like me", "less like me" (mirror one level up or down) anytime. That applies to this conversation; for good, Claude gives me the updated first line to paste over the old one.
 ```
 
