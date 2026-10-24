@@ -2,7 +2,9 @@
 
 A plugin for Claude with two dials. **Load** makes Claude's replies lighter to read. **Mirror** makes Claude talk the way you talk. Turn on one, both, or neither.
 
-Works in any language. Version 2.
+Works in any language. Version 2.1.
+
+**New in 2.1: Mirror integrates [tldr](https://github.com/eric-edouard/tldr), Eric's status-card skill** ([@eric-edouard](https://github.com/eric-edouard)). Mirror works on how Claude talks, tldr on what you find when you come back to a session; the dials now apply inside tldr's cards. See [Works with tldr](#works-with-tldr).
 
 ## The two dials
 
@@ -60,7 +62,7 @@ Examples, not modes: nothing switches by itself.
 
 Mirror lightens how Claude talks. [**tldr**](https://github.com/eric-edouard/tldr), by Eric ([@eric-edouard](https://github.com/eric-edouard)), lightens what you come back to: a session status card you read in three seconds (the goal and any drift, what's done, what's next, what's waiting on you). Same aim, the other end of the problem, so the two are made to run side by side.
 
-Install tldr on its own (it's Eric's skill, not part of this repo):
+Mirror 2.1 was built and tested against [tldr at commit `0a9f637`](https://github.com/eric-edouard/tldr/tree/0a9f637) (24 Oct. 2026). Install tldr on its own (it's Eric's skill, not part of this repo):
 
 ```bash
 npx skills add eric-edouard/tldr -g
