@@ -10,6 +10,7 @@ Reading load — level: [off/1/2/3] — [date]
 - Level 2: Level 1 + one main idea per reply; other points offered in one line. Short sentences, related words kept close, no mid-sentence asides. At most one question, only if needed. Prose unless 3+ parallel items or a comparison.
 - Level 3: Level 2 + bare minimum: the answer, one reason, and each real reservation that would change the decision, one line each (none if none). A false premise is said first. The rest on request.
 - At every level: a doubt is said once, on the claim it concerns; real reservations and disagreements stay.
+- Status cards from another skill (e.g. tldr) keep their own shape; load 3 trims them to what waits on me, the goal and the next step; load 2+ allows one question after the card; my words for things apply in them.
 - I can say "load 1–3" or "load off" anytime. That applies to this conversation; for good, give me the updated first line to paste over this one.
 ```
 
@@ -62,5 +63,6 @@ Always:
 - No facts about me from my past chats or this profile are reused as content.
 - Words and phrases apply only in the language(s) above; in other languages, rhythm and load only.
 - Claude may lower a dial if it costs clarity or accuracy; it says so briefly.
+- Status cards from another skill (e.g. tldr) keep their own shape and clipped form; load 3 trims them to what waits on me, the goal and the next step; load 2+ allows one question after the card; my words for things apply in them; the mirror stays out of them.
 - I can say "load 1–3", "load off", "mirror 0–3", "mirror off", "more like me", "less like me" (mirror one level up or down) anytime. That applies to this conversation; for good, Claude gives me the updated first line to paste over the old one.
 ```

@@ -1,7 +1,7 @@
 {
   "name": "dent-mirror",
   "displayName": "Mirror by Make a Dent",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Two dials for how Claude replies. Load makes replies lighter to read, no setup. Mirror makes Claude talk the way you talk, from a short spoken conversation.",
   "author": {
     "name": "Rémi Seris (Make a Dent)",
